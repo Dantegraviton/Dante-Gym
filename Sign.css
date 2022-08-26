@@ -1,0 +1,307 @@
+.mybody{
+    background-image: linear-gradient( 90deg, rgb(53, 53, 53) 50%, rgb(29, 25, 25) 50%);
+  
+}
+.container{
+    position: relative;
+	
+}
+.sign-in-container, .sign-up-container{
+    display: flex;
+}
+.img{
+    -webkit-filter: brightness(.5);
+    background-image: url(./img1.jfif);
+    background-position: top center;
+    background-size: cover;
+    width: 45%;
+    height: 95vh;
+    margin: 2% 5%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.step{
+    background-color: #1e1e1e;
+    width: 45%;
+    height: 90vh;
+    margin: 2% 0 0 -5%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;  
+}
+.step-two{
+    height: auto;
+}
+.step h1{
+    font-weight: bolder;
+    font-size: 22px;
+    margin-top: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-shadow: "0px 3px 3px #000";
+}
+.gymicon{
+    padding-right: 10px;
+    transition: .3s linear;
+}
+.gymicon:hover{
+    color: #772eff;
+    cursor: pointer;
+    padding-bottom: 2px;
+}
+.gym{
+    margin-left: 3px;
+    color: #772eff;
+}
+.main{
+    background-color: transparent;
+    width: 75%;
+    margin-top: 7%;
+    margin-left: 13%;
+    height: 50vh;
+}
+.main h3{
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.input .icn{
+    margin-left: 20px;
+    font-size: 20px;
+    color: #772eff;
+}
+.input input{
+    display: block;
+    margin-left: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 70%;
+    background: transparent;
+    color: rgb(255, 255, 255);
+}
+.input input::placeholder{
+    color: rgb(197, 197, 197);
+}
+.main .forgot{
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.main button{
+    border: 1px solid gainsboro;
+    color:  #fff;
+    width: 45%;
+    height: 2rem;
+    font-weight: 500;
+    font-size: 1em;
+    border-radius: 10px;
+    transition: all .5s ease-out;
+    cursor: pointer;
+    margin-left: 130px;
+    margin-top: 15px;
+    background-color: #1e1e1e;
+    border: 1px solid gray;
+}
+.main button:hover{
+    box-shadow: inset 250px 0 0 0 #772eff;
+    color: rgb(255, 255, 255);
+    padding-left: 20px;
+    font-weight: 700;
+}
+fieldset{
+    text-align: center;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid rgb(97, 96, 96);
+    margin-top: 25px;
+}
+legend{
+    color: #fff;
+    padding: 0 10px;
+}
+.using{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.using p{
+    color: #fff;
+    margin-right: 10px;
+}
+.media{
+    text-align: center; 
+}
+.new{
+    color: #fff;
+    text-align: center;
+}
+
+/* signIn responsiveness */
+@media (max-width : 900px) {
+    
+    .step, .img ,.step-two{
+        height: 110vh;
+    }
+    .main h3{
+        text-align: center
+    }
+    .btns{
+        margin-left: 80px !important;
+    }
+
+    .sign-up-container{
+       height: 90vh;
+    }
+}
+
+
+
+.noshow{
+    display: none;
+}
+.red-text{
+    margin-left: 20px;
+    color: red;
+}
+/* SignUp */
+.img2{
+    background-image: url(./PNG\ image.png);
+    -webkit-filter: brightness(.5);
+    background-position: top center;
+    background-size: cover;
+    width: 45%;
+    height: 90vh;
+    margin: 2% 5%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.create{
+    text-align: center;
+}
+.create p{
+    color: #fff;
+    font-size: 15px;
+}
+.input2{
+    margin-left: 10px;
+}
+.signing{
+    color: #fff;
+    margin-left: 30px;
+}
+.signing span{
+    color: blue;
+    cursor: pointer;
+}
+.step button{
+    border: 1px solid gainsboro;
+    color:  #fff;
+    width: 45%;
+    height: 2rem;
+    font-weight: 500;
+    font-size: 1em;
+    border-radius: 10px;
+    transition: all .5s ease-out;
+    cursor: pointer;
+    margin-left: 130px;
+    margin-top: 15px;
+    background-color: #1e1e1e;
+    border: 1px solid gray;
+    
+}
+.step button:hover{
+    box-shadow: inset 260px 0 0 0 #772eff;
+    color: rgb(255, 255, 255);
+    padding-left: 20px;
+    font-weight: 700;
+}
+.passwordinput{
+    display: flex;
+}
+
+#tooglePassword{
+    margin-top: 10px;
+    margin-left: -30px;
+    cursor: pointer;
+}
+#tooglePasswordTwo{
+    margin-top: 10px;
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+    /* show password */
+    .checkbox-container {
+        display: inline-flex;
+    }
+    .checkboxlabel{
+        color: #772eff;
+        margin-left: 20px;
+        transition: .3s linear;
+    }
+    .checkbox{
+        cursor: pointer;
+    }
+
+
+
+@media screen and (max-width: 900px){
+    .mybody{
+        -webkit-filter: brightness(1.1);
+        height: 95vh;
+    }
+    .sign-in-container{
+        background: red;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .img{
+        display: none;
+        
+    }
+    .step{
+        -webkit-filter: brightness(.5);
+        background:linear-gradient(rgba(27, 27, 27, 0.504), rgba(42, 42, 42, 0.718)), url(./img1.jfif);
+        width: 70vw;
+        height: 29rem ;
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+        height: 90vh;
+        color: #fff;
+    }
+    
+    .container,
+    .sign-in-container{
+        margin-top: 1rem;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+    .step h1{
+        font-size: .7rem;
+        padding-top: 20px;
+        margin: 20px 0;
+        text-align: center;
+        width: 100%;
+    }
+    .input input::placeholder{
+        color: rgb(255, 255, 255);
+    }
+    .img2{
+        display: none;
+    }
+    .create p{
+        font-size: .5rem;
+    }
+}

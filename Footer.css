@@ -1,0 +1,52 @@
+.footer{
+    font-weight: 100;
+    margin: 0;
+    background: #131313;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+}
+.gymplex{
+    text-align: center;
+    padding: 5px 0;
+    color: #6d1fff;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-shadow: 0px 3px 4px  rgba(68, 68, 68, 0.448);
+}
+.made-by{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+.made-by span{
+    color: #6d1fff;
+    font-size: 1.3rem;
+}
+.names{
+    margin: 20px;
+    padding-left: 10px ;
+    font-size: 1rem;
+    color: #fff;
+}
+.footicons{
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #fff;
+    transition: .3s ease;
+}
+.footicons:hover{
+    background: #fff;
+    color: #131313;
+}
+@media screen and (max-width: 900px){
+    .made-by{
+        flex-direction: column;
+    }
+    .footicons{
+        margin: 30px 10px;
+    }
+    .gymplex{
+        font-size: 1rem;
+        color: #fff;
+    }
+}

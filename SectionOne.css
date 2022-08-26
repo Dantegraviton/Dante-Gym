@@ -1,0 +1,115 @@
+.sectionOne{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e1e1e;
+    padding-left: 2rem;
+    height: 30rem;
+    padding-top: -2rem;
+}
+.sub-head{
+    font-size: 2rem;
+    color: #fff;
+    margin: 20px 0;
+    margin-left: 2.5rem;
+}
+
+.info-cont{
+    display:flex;
+    align-items: center;
+    width: 70vw;
+    /* background: red; */
+}
+.conticon{
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    /* background: #8f52ff3d; */
+    color: #ffffff;
+    overflow: hidden;
+    box-shadow: rgba(143, 143, 143, 0.254) 0px 30px 60px -12px inset, rgba(117, 117, 117, 0.179) 0px 18px 36px -18px inset;
+}
+.icon-cont{
+    position: relative;
+    animation: scroolUp 3s linear infinite;
+}
+@keyframes scroolUp {
+    0%{
+        top: 100%;
+        
+    }
+    40%, 60%{
+        top: 0;
+        
+    }
+    100%{
+        top: -100%;
+    }
+    
+}
+.image img{
+    margin-right: 20px;
+    box-shadow:  0px 0px 40px 40px #2e2e2e73;
+    -webkit-filter: brightness(.5) grayscale(.3);
+    height: 25rem;
+    width: 30rem;
+}
+.info-cont{
+    display: flex;
+    flex-direction: column;
+}
+.info-text{
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 150%;
+    margin: 1.5rem 2.5rem;
+}
+.caro-btn{
+    display: flex;
+    margin-left: -18rem;
+    cursor: pointer;
+    color: #fff;
+    width: 6.5rem;
+    padding: 8px 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    background: #8f52ff;
+    transition: .3s all ease;
+}
+.caro-btn:hover{
+    color: #772eff;
+    /* background: #fff; */
+    box-shadow: inset 150px 0 0 0 #fff;
+
+    font-weight: 700;
+    text-shadow:rgb(0, 0, 0) 0px 1px 1px ;
+    /* border-radius: 20; */
+}
+.caro-btn p{
+    padding-right: 5px;
+}
+
+@media screen and (max-width: 900px) {
+    .sectionOne{
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(rgba(17, 16, 16, 0.958),rgba(20, 20, 20, 0.701)), url(./Product/BackgroundOne.JPG);
+        background-position: center;
+        flex-direction: column;
+        /* z-index: -999; */
+    }
+    .image{
+        display: none;
+    }
+    .info-cont{
+        padding-top: 2rem;
+    }
+    .caro-btn{
+        margin-left: 2em;
+    }
+}
